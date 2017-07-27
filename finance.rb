@@ -5,7 +5,7 @@ require 'etc'
 print 'Enter your stock symbol:'
 in_symbol = gets 
 ticker = in_symbol.chomp.upcase
-p Etc.getlogin 
+
 
 url = 'https://www.google.com/finance/getprices?q=' + ticker.to_s + '&x=NASD&i=120&p=25m&f=d,c,v,o,h,l&df=cpct&auto=1&ts=1501179683973&ei=vCl6WbGZHNSP2Abo3KPoDg'
 while true
